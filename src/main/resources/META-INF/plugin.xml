@@ -8,14 +8,13 @@
     </description>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
-
     </extensions>
     <actions>
         <group id="ChatGpt" text="ChatGPT" popup="true">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
-            <action id="com.linhpd.chatgptintelliji.actions.RefactorAction"
-                    class="com.linhpd.chatgptintelliji.actions.RefactorAction"
-                    text="Refactor"/>
+            <!--            <action id="com.linhpd.chatgptintelliji.actions.RefactorAction"-->
+            <!--                    class="com.linhpd.chatgptintelliji.actions.RefactorAction"-->
+            <!--                    text="Refactor"/>-->
             <action id="com.linhpd.chatgptintelliji.actions.ExplainAction"
                     class="com.linhpd.chatgptintelliji.actions.ExplainAction"
                     text="Explain"/>

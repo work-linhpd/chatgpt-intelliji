@@ -1,0 +1,24 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.linhpd.chatgpt-intelliji</id>
+    <name>ChatGPT: Write and Improve Code Using AI</name>
+    <vendor email="work.linhpd@gmail.com">Pham Duy Linh</vendor>
+    <description>Use ChatGPT and GPT4 right inside the IDE to enhance and automate your coding with AI-powered
+        assistance (unofficial)
+    </description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+    <actions>
+        <group id="ChatGpt" text="ChatGPT" popup="true">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <action id="com.linhpd.chatgptintelliji.actions.RefactorAction"
+                    class="com.linhpd.chatgptintelliji.actions.RefactorAction"
+                    text="Refactor"/>
+            <action id="com.linhpd.chatgptintelliji.actions.ExplainAction"
+                    class="com.linhpd.chatgptintelliji.actions.ExplainAction"
+                    text="Explain"/>
+        </group>
+    </actions>
+</idea-plugin>

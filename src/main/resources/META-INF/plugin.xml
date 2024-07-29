@@ -8,9 +8,12 @@
     </description>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
+        <toolWindow factoryClass="com.linhpd.chatgptintelliji.ui.toolwindows.ChatGPTToolWindowFactory"
+                    id="Chat GPT" icon="/icons/chatgpt.svg"
+                    anchor="right" secondary="true"/>
     </extensions>
     <actions>
-        <group id="ChatGpt" text="ChatGPT" popup="true">
+        <group id="ChatGpt" text="Chat GPT" popup="true">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <!--            <action id="com.linhpd.chatgptintelliji.actions.RefactorAction"-->
             <!--                    class="com.linhpd.chatgptintelliji.actions.RefactorAction"-->
